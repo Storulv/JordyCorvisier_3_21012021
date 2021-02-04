@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"/>
     <title>ohmyfood</title>
+    <link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link href="/JordyCorvisier_3_21012021/css/style.css" rel="stylesheet">
 </head>
 <body>
     
     <header>
         <!-- Logo du site -->
-        <figure>
-            <img src="./images/logo/ohmyfood.png" alt="Logo texte écrit ohmyfood" />
-        </figure>
-        <i class="fas fa-map-marker-alt"></i>
-        <input class="location" type="text" value="Paris, Belleville">
-        </input>
+        <div class="div-logo-header">
+            <figure>
+                <img src="./images/logo/ohmyfood.png" alt="Logo texte écrit ohmyfood" class="logo-header">
+            </figure>
+        </div>
+        <div id="location-header">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Paris, Belleville</span>
+        </div>
         <section class="decouverte">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception sélectionnés pas nos soins.</p>
@@ -29,18 +33,22 @@
             <h2>Fonctionnement</h2>
             <ol>
                 <li>
+                    <i class="fas fa-mobile-alt"></i>
                     <p>Choisissez un restaurant</p>
                 </li>
                 <li>
+                    <i class="fas fa-list-ul"></i>
                     <p>Composez votre menu</p>
                 </li>
                 <li>
+                    <i class="fas fa-store"></i>
                     <p>Dégustez au restaurant</p>
                 </li>
             </ol>
         </section>
         <!-- SECTION DES DIFFERENTS RESTAURANTS -->
         <section class="restaurants">
+            <h3>Restaurants</h3>
             <!-- CARD D'UN RESTAURANT -->
             <a href="./restaurant/La_palette_du_gout.html">
                 <figure>
@@ -91,10 +99,7 @@
     </main>
     
     <footer>
-        <!-- Logo du site -->
-        <figure>
-            <img src="./images/logo/ohmyfood.png" alt="Logo texte écrit ohmyfood" />
-        </figure>
+        <h3>ohmyfood</h3>
         <!-- Liste des éléments du footer, les icônes spécifiques sont ajoutés en via le code CSS -->
         <ul>
             <li><a href="#">proposer un restaurant</a></li>
