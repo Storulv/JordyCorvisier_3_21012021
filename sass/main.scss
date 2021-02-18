@@ -14,13 +14,16 @@ body {
     font-family: 'Shrikhand',sans-serif;
 } */
 
-.div-logo-header {
-    /* margin-bottom: -16px; */
-}
+/* -------------- */
+/* --- HEADER --- */
+/* -------------- */
 
-header>div>figure {
+/* ------------ */
+/* Logo du site */
+/* ------------ */
+
+header > div > figure {
     height: 40px;
-    border-bottom: black;
 }
 
 .logo-header {
@@ -28,47 +31,176 @@ header>div>figure {
     transform: scale(55%);
 }
 
+/* ---------------- */
+/* Fin Logo du site */
+/* ---------------- */
+
 #location-header {
     display: flex;
     justify-content: center;
-    background-color: #eaeaea;
     padding: 4%;
-    box-shadow: inset 0px 3px 3px rgba(0, 0, 0, .1); 
+    background-color: #eaeaea;
+    box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.1); 
 }
 
-header>div>i {
-    color: #353535;
+header > div > i {
     margin-right: 2%;
+    color: #353535;
 }
+
+/* ------------------ */
+/* SECTION DECOUVERTE */
+/* ------------------ */
 
 .decouverte {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     padding: 10%;
     background-color: #f6f6f6;
 }
 
-.decouverte>h1 {
-    text-align: center;
-    font-size: 1.6em;
+.decouverte > h1 {
     margin: 0;
+    font-size: 1.6rem;
+    text-align: center;
 }
 
-.decouverte>p {
-    text-align: center;
+.decouverte > p {
     font-style: 'Roboto', sans-serif;
     font-weight: 400;
+    text-align: center;
     color: #777;
 }
 
-.decouverte>button {
+.decouverte > a {
     margin: auto;
     border: none;
     border-radius: 40px;
+    padding: 5%;
     background: rgb(147,86,220);
     background: linear-gradient(345deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
-    padding: 5%;
     color: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, .3); 
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
 }
+
+/* ------------------ */
+/* --- FIN HEADER --- */
+/* ------------------ */
+
+/* -------------------------------------- */
+/* --- SECTION FONCTIONNEMENT DU SITE --- */
+/* -------------------------------------- */
+
+.Fonctionnement > ol {
+    
+}
+
+.Fonctionnement > ol > li::before {
+    
+}
+
+/* ------------------------------------------ */
+/* --- FIN SECTION FONCTIONNEMENT DU SITE --- */
+/* ------------------------------------------ */
+
+/* ------------------------------------------ */
+/* --- SECTION DES DIFFERENTS RESTAURANTS --- */
+/* ------------------------------------------ */
+
+.restaurants {
+    background-color: #f6f6f6;
+    width: 100%;
+    
+    > h2 {
+        padding: 10% 0 0 4%
+    }
+    
+    a {
+        text-decoration: none;
+        &:any-link{color: #333;}
+
+        figure {
+            position: relative;
+            margin: auto;
+            margin-bottom: 20px;
+            width: 91%;
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 5px 20px -15px #444;
+            
+            .div-overflow-img {
+                overflow: hidden;
+                height: 20vh;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            figcaption {
+
+                display: flex;
+                flex-direction: column;
+                height: 10vh;
+                padding: 0;
+                margin: 0;
+
+                h3 {
+                    margin-left: 12px;
+                    padding: 0;
+                }
+
+                p {
+                    margin-top: -15px;
+                    margin-left: 12px;
+                }
+
+                i {
+                    position: absolute;
+                    bottom: 35px;
+                    right: 15px;
+                    transform: scale(150%);
+                }
+
+                i:hover {
+                    background: rgb(147,86,220);
+                    background: linear-gradient(204deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%); 
+                }
+                
+                .news-on-it {
+                    position: absolute;
+                    top: 13px;
+                    right: 13px;
+                    margin: 0;
+                    padding: 5px;
+                    background-color: #99E2D0;
+                    color: #028867;
+                }
+            }
+        }
+    }
+
+    a:nth-of-type(1) img {
+        transform: translateY(-58px);
+    }
+
+    a:nth-of-type(2) img {
+        transform: translateY(-160px);
+    }
+
+    a:nth-of-type(3) img {
+        transform: translateY(-65px);
+    }
+
+    a:nth-of-type(4) img {
+        transform: translateY(-70px);
+    }
+}
+
+/* ---------------------------------------------- */
+/* --- FIN SECTION DES DIFFERENTS RESTAURANTS --- */
+/* ---------------------------------------------- */

@@ -8,13 +8,14 @@ body {
 /* {
     font-family: 'Shrikhand',sans-serif;
 } */
-.div-logo-header {
-  /* margin-bottom: -16px; */
-}
-
+/* -------------- */
+/* --- HEADER --- */
+/* -------------- */
+/* ------------ */
+/* Logo du site */
+/* ------------ */
 header > div > figure {
   height: 40px;
-  border-bottom: black;
 }
 
 .logo-header {
@@ -22,49 +23,150 @@ header > div > figure {
   transform: scale(55%);
 }
 
+/* ---------------- */
+/* Fin Logo du site */
+/* ---------------- */
 #location-header {
   display: flex;
   justify-content: center;
-  background-color: #eaeaea;
   padding: 4%;
-  box-shadow: inset 0px 3px 3px rgba(0, 0, 0, 0.1);
+  background-color: #eaeaea;
+  box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 header > div > i {
-  color: #353535;
   margin-right: 2%;
+  color: #353535;
 }
 
+/* ------------------ */
+/* SECTION DECOUVERTE */
+/* ------------------ */
 .decouverte {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   padding: 10%;
   background-color: #f6f6f6;
 }
 
 .decouverte > h1 {
-  text-align: center;
-  font-size: 1.6em;
   margin: 0;
+  font-size: 1.6rem;
+  text-align: center;
 }
 
 .decouverte > p {
-  text-align: center;
   font-style: "Roboto", sans-serif;
   font-weight: 400;
+  text-align: center;
   color: #777;
 }
 
-.decouverte > button {
+.decouverte > a {
   margin: auto;
   border: none;
   border-radius: 40px;
+  padding: 5%;
   background: #9356dc;
   background: linear-gradient(345deg, #9356dc 0%, #ff79da 100%);
-  padding: 5%;
   color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
 }
+
+/* ------------------ */
+/* --- FIN HEADER --- */
+/* ------------------ */
+/* -------------------------------------- */
+/* --- SECTION FONCTIONNEMENT DU SITE --- */
+/* -------------------------------------- */
+/* ------------------------------------------ */
+/* --- FIN SECTION FONCTIONNEMENT DU SITE --- */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* --- SECTION DES DIFFERENTS RESTAURANTS --- */
+/* ------------------------------------------ */
+.restaurants {
+  background-color: #f6f6f6;
+  width: 100%;
+}
+.restaurants > h2 {
+  padding: 10% 0 0 4%;
+}
+.restaurants a {
+  text-decoration: none;
+}
+.restaurants a:any-link {
+  color: #333;
+}
+.restaurants a figure {
+  position: relative;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 91%;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 5px 20px -15px #444;
+}
+.restaurants a figure .div-overflow-img {
+  overflow: hidden;
+  height: 20vh;
+}
+.restaurants a figure img {
+  width: 100%;
+  height: auto;
+}
+.restaurants a figure figcaption {
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  padding: 0;
+  margin: 0;
+}
+.restaurants a figure figcaption h3 {
+  margin-left: 12px;
+  padding: 0;
+}
+.restaurants a figure figcaption p {
+  margin-top: -15px;
+  margin-left: 12px;
+}
+.restaurants a figure figcaption i {
+  position: absolute;
+  bottom: 35px;
+  right: 15px;
+  transform: scale(150%);
+}
+.restaurants a figure figcaption i:hover {
+  background: #9356dc;
+  background: linear-gradient(204deg, #9356dc 0%, #ff79da 100%);
+}
+.restaurants a figure figcaption .news-on-it {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  margin: 0;
+  padding: 5px;
+  background-color: #99E2D0;
+  color: #028867;
+}
+.restaurants a:nth-of-type(1) img {
+  transform: translateY(-58px);
+}
+.restaurants a:nth-of-type(2) img {
+  transform: translateY(-160px);
+}
+.restaurants a:nth-of-type(3) img {
+  transform: translateY(-65px);
+}
+.restaurants a:nth-of-type(4) img {
+  transform: translateY(-70px);
+}
+
+/* ---------------------------------------------- */
+/* --- FIN SECTION DES DIFFERENTS RESTAURANTS --- */
+/* ---------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
