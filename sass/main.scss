@@ -237,3 +237,37 @@ header > div > i {
 /* ---------------------------------------------- */
 /* --- FIN SECTION DES DIFFERENTS RESTAURANTS --- */
 /* ---------------------------------------------- */
+
+/* -------------- */
+/* --- FOOTER --- */
+/* -------------- */
+
+footer {
+
+    padding: 1% 7%;
+    background-color: #444;
+
+    h3 {
+        font-family: 'Shrikhand';
+        color: white;
+    }
+
+    ul , a {
+        list-style-type: none;
+        padding: 0;
+        text-decoration: none;
+        
+        &:any-link {
+            color: white;
+        }
+        
+        i {
+            display: inline-block;
+            width: 25px;
+        }
+        
+        li {
+            line-height: 1.8em;
+        }
+    }
+}
