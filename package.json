@@ -1,8 +1,8 @@
 {
   "name": "jordycorvisier_3_21012021",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "P3 de la formation Dev Web chez Openclassrooms",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:css/style.css"
   },
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/Storulv/JordyCorvisier_3_21012021.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Storulv/JordyCorvisier_3_21012021/issues"
   },
