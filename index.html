@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ohmyfood</title>
-    <link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
     
-    <header>
+    <div class="spinner-div">
+        <i class="fas fa-spinner"></i>
+    </div>
+
+    <header class="page-content">
         <!-- Logo du site -->
         <figure>
             <img src="images/logo/ohmyfood.png" alt="Logo texte écrit ohmyfood" class="logo-header">
@@ -26,7 +30,7 @@
         </section>
     </header>
     
-    <main>
+    <main class="page-content">
         <!-- SECTION FONCTIONNEMENT DU SITE -->
         <section class="Fonctionnement">
             <h2>Fonctionnement</h2>
@@ -52,13 +56,14 @@
             <a href="restaurant/La_palette_du_gout.html">
                 <figure>
                     <div class="div-overflow-img">
-                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Assiette composée de saumon et de salade">
-                </div>
+                        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Assiette composée de saumon et de salade">
+                    </div>
                     <figcaption>
                         <p class="news-on-it">Nouveau</p>
                         <h3>La palette du goùt</h3>
                         <p>Ménilmontant</p>
                         <i class="far fa-heart"></i>
+                        <i class="fas fa-heart solid"></i>
                     </figcaption>
                 </figure>
             </a>
@@ -73,6 +78,7 @@
                         <h3>La note enchantée</h3>
                         <p>Charonne</p>
                         <i class="far fa-heart"></i>
+                        <i class="fas fa-heart solid"></i>
                     </figcaption>
                 </figure>
             </a>
@@ -80,12 +86,13 @@
             <a href="#">
                 <figure>
                     <div class="div-overflow-img">
-                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Oeufs mollets sur pain toasté">
-                </div>
+                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Oeufs mollets sur pain toasté">
+                    </div>
                     <figcaption>
                         <h3>À la française</h3>
                         <p>Cité Rouge</p>
                         <i class="far fa-heart"></i>
+                        <i class="fas fa-heart solid"></i>
                     </figcaption>
                 </figure>
             </a>
@@ -93,23 +100,24 @@
             <a href="#">
                 <figure>
                     <div class="div-overflow-img">
-                    <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Une grande assiette de poisson mariné aux légumes">
+                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Une grande assiette de poisson mariné aux légumes">
                     </div>
                     <figcaption>
                         <h3>Le délice des sens</h3>
                         <p>Folie-Méricourt</p>
                         <i class="far fa-heart"></i>
+                        <i class="fas fa-heart solid"></i>
                     </figcaption>
                 </figure>
             </a>
         </section>
     </main>
     
-    <footer>
+    <footer class="page-content">
         <h3>ohmyfood</h3>
         <!-- Liste des éléments du footer, les icônes spécifiques sont ajoutés en via le code CSS -->
         <ul>
-            <li><a href="#"> <i class="fas fa-utensils"></i> Proposer un restaurant</a></li>
+            <li><a href="#"> <i class="fas fa-utensils fa-fw"></i> Proposer un restaurant</a></li>
             <li><a href="#"><i class="fas fa-hands-helping"></i> Devenir partenaire</a></li>
             <li><a href="#">Mentions légales</a></li>
             <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>

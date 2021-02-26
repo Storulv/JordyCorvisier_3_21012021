@@ -5,9 +5,58 @@ body {
   font-family: "roboto", sans-serif;
 }
 
-/* {
-    font-family: 'Shrikhand',sans-serif;
-} */
+/* -----------------------*/
+/* ---loading Animation---*/
+/* -----------------------*/
+@-webkit-keyframes spinner-loading {
+  0% {
+    visibility: visible;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+  33% {
+    visibility: visible;
+    transform: rotate(360deg);
+  }
+  75% {
+    visibility: visible;
+    transform: rotate(720deg);
+  }
+  100% {
+    visibility: visible;
+    transform: rotate(720deg);
+  }
+}
+@-webkit-keyframes page-content-appear {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+.spinner-div {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: calc( 50% - 24px);
+}
+
+.fa-spinner {
+  visibility: hidden;
+  font-size: 300%;
+  animation: "spinner-loading" 2s 1s;
+  color: #9356DC;
+}
+
+.page-content {
+  visibility: visible;
+  animation: "page-content-appear" 3s;
+}
+
+/* ---------------------------*/
+/* ---END loading Animation---*/
+/* ---------------------------*/
 /* -------------- */
 /* --- HEADER --- */
 /* -------------- */
@@ -120,6 +169,10 @@ header > div > i {
   color: white;
 }
 
+.Fonctionnement > ol > li:hover {
+  background-color: #f5edff;
+}
+
 /* ------------------------------------------ */
 /* --- FIN SECTION FONCTIONNEMENT DU SITE --- */
 /* ------------------------------------------ */
@@ -178,9 +231,18 @@ header > div > i {
   right: 15px;
   transform: scale(150%);
 }
-.restaurants a figure figcaption i:hover {
-  background: #9356dc;
+.restaurants a figure figcaption i.solid {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.restaurants a figure figcaption i.solid:hover {
+  opacity: 1;
+  color: transparent;
   background: linear-gradient(204deg, #9356dc 0%, #ff79da 100%);
+  background-clip: text;
+}
+.restaurants a figure figcaption i.solid {
+  /* visibility: hidden; */
 }
 .restaurants a figure figcaption .news-on-it {
   position: absolute;

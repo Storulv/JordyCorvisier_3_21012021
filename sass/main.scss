@@ -10,9 +10,65 @@ body {
     font-family: 'roboto', sans-serif;
 }
 
-/* {
-    font-family: 'Shrikhand',sans-serif;
-} */
+/* -----------------------*/
+/* ---loading Animation---*/
+/* -----------------------*/
+
+@-webkit-keyframes spinner-loading {
+    0% {
+        visibility: visible;
+        z-index: 1;
+        transform: rotate(0deg);
+    }
+    
+    33% {
+        visibility: visible;
+        transform: rotate(360deg);
+    }
+    
+    75% {
+        visibility: visible;
+        transform: rotate(720deg);
+    }
+    
+    100% {
+        visibility: visible;
+        transform: rotate(720deg);
+    }
+}
+
+@-webkit-keyframes page-content-appear {
+    0% {
+        visibility: hidden;
+    }
+    
+    100% {
+        visibility: hidden;
+    }
+}
+
+.spinner-div {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: calc( 50% - 24px);
+}
+
+.fa-spinner {
+    visibility: hidden;
+    font-size: 300%;
+    animation: 'spinner-loading' 2s 1s;
+    color: $primary-color;
+}
+
+.page-content {
+    visibility: visible;
+    animation: 'page-content-appear' 3s;
+}
+
+/* ---------------------------*/
+/* ---END loading Animation---*/
+/* ---------------------------*/
 
 /* -------------- */
 /* --- HEADER --- */
@@ -113,10 +169,10 @@ header > div > i {
     vertical-align: middle;
     font-weight: 500;
     
-        i {
-            margin: auto;
-            color: #777;
-        }
+    i {
+        margin: auto;
+        color: #777;
+    }
 }
 
 .Fonctionnement > ol > li::before {
@@ -131,7 +187,11 @@ header > div > i {
     vertical-align: middle;
     background-color: $primary-color;
     color: white;
+    
+}
 
+.Fonctionnement > ol > li:hover {
+    background-color: #f5edff;
 }
 
 /* ------------------------------------------ */
@@ -153,7 +213,7 @@ header > div > i {
     a {
         text-decoration: none;
         &:any-link{color: #333;}
-
+        
         figure {
             position: relative;
             margin: auto;
@@ -168,40 +228,53 @@ header > div > i {
                 overflow: hidden;
                 height: 20vh;
             }
-
+            
             img {
                 width: 100%;
                 height: auto;
             }
-
+            
             figcaption {
-
+                
                 display: flex;
                 flex-direction: column;
                 height: 10vh;
                 padding: 0;
                 margin: 0;
-
+                
                 h3 {
                     margin-left: 12px;
                     padding: 0;
                 }
-
+                
                 p {
                     margin-top: -15px;
                     margin-left: 12px;
                 }
-
+                
                 i {
                     position: absolute;
                     bottom: 35px;
                     right: 15px;
                     transform: scale(150%);
                 }
-
-                i:hover {
-                    background: rgb(147,86,220);
-                    background: linear-gradient(204deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%); 
+                
+                i.solid {
+                    opacity: 0;
+                    transition: opacity 0.5s;
+                    
+                    &:hover{
+                        opacity: 1;
+                        color: transparent;
+                        background: linear-gradient(204deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+                        background-clip: text;
+                        
+                    }
+                }
+                
+                
+                i.solid {
+                    /* visibility: hidden; */
                 }
                 
                 .news-on-it {
@@ -216,19 +289,19 @@ header > div > i {
             }
         }
     }
-
+    
     a:nth-of-type(1) img {
         transform: translateY(-58px);
     }
-
+    
     a:nth-of-type(2) img {
         transform: translateY(-160px);
     }
-
+    
     a:nth-of-type(3) img {
         transform: translateY(-65px);
     }
-
+    
     a:nth-of-type(4) img {
         transform: translateY(-70px);
     }
@@ -243,15 +316,15 @@ header > div > i {
 /* -------------- */
 
 footer {
-
+    
     padding: 1% 7%;
     background-color: #444;
-
+    
     h3 {
         font-family: 'Shrikhand';
         color: white;
     }
-
+    
     ul , a {
         list-style-type: none;
         padding: 0;
