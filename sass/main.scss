@@ -91,18 +91,32 @@ header > div > figure {
 /* Fin Logo du site */
 /* ---------------- */
 
-.location-header {
+/* -------------------------------- */
+/* ---Formulaire de localisation--- */
+/* -------------------------------- */
+
+.form-location {
     display: flex;
     justify-content: center;
-    padding: 4%;
+    padding: 1em;
     background-color: #eaeaea;
-    box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.1); 
+    box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.1);
+
+    .location-input {
+        border: none;
+        width: 33%;
+        background-color: #eaeaea;
+    }
+
+    i {
+        margin-right: 2%;
+        color: #353535;
+    }
 }
 
-header > div > i {
-    margin-right: 2%;
-    color: #353535;
-}
+/* ------------------------------------- */
+/* --- FIN Formulaire de localisation--- */
+/* ------------------------------------- */
 
 /* ------------------ */
 /* SECTION DECOUVERTE */
