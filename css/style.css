@@ -9,7 +9,7 @@ body {
 /* -----------------------*/
 /* ---loading Animation---*/
 /* -----------------------*/
-@-webkit-keyframes spinner-loading {
+@keyframes spinner-loading {
   0% {
     visibility: visible;
     z-index: 1;
@@ -28,7 +28,7 @@ body {
     transform: rotate(720deg);
   }
 }
-@-webkit-keyframes page-content-appear {
+@keyframes page-content-appear {
   0% {
     visibility: hidden;
   }
@@ -64,8 +64,8 @@ body {
 /* ------------ */
 /* Logo du site */
 /* ------------ */
-header > div > figure {
-  height: 40px;
+header {
+  height: 3.5em;
 }
 
 .logo-header {
@@ -317,6 +317,44 @@ footer ul i, footer a i {
 }
 footer ul li, footer a li {
   line-height: 1.8em;
+}
+
+/* ------ */
+/* ------ */
+/* HEADER */
+/* ------ */
+.flex-header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.flex-header a {
+  text-decoration: none;
+}
+.flex-header a:any-link {
+  color: #333;
+}
+.flex-header .fa-arrow-left {
+  position: relative;
+  top: 1.2em;
+  left: 1.1em;
+  font-size: 1.4em;
+}
+
+/* IMAGE DU RESTAURANT */
+.restaurant-img {
+  margin: 0;
+  margin-top: 0.5em;
+}
+.restaurant-img img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.template-main-restaurant {
+  border-radius: 30px 30px 0 0;
+  border-style: solid 5px blue;
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

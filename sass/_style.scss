@@ -6,7 +6,7 @@ body {
 /* ---loading Animation---*/
 /* -----------------------*/
 
-@-webkit-keyframes spinner-loading {
+@keyframes spinner-loading {
     0% {
         visibility: visible;
         z-index: 1;
@@ -29,7 +29,7 @@ body {
     }
 }
 
-@-webkit-keyframes page-content-appear {
+@keyframes page-content-appear {
     0% {
         visibility: hidden;
     }
@@ -70,8 +70,8 @@ body {
 /* Logo du site */
 /* ------------ */
 
-header > div > figure {
-    height: 40px;
+header {
+    height: 3.5em;
 }
 
 .logo-header {
