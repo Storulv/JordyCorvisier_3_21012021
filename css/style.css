@@ -132,6 +132,12 @@ header > div > figure {
   color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
   text-decoration: none;
+  transition: all ease 0.2s;
+}
+.decouverte > a:hover {
+  transform: scale(1.02);
+  opacity: 95%;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* ------------------ */
@@ -211,6 +217,12 @@ header > div > figure {
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 5px 20px -15px #444;
+  transition: all ease 0.2s;
+}
+.restaurants a figure:hover {
+  transform: scale(1.02);
+  opacity: 95%;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 .restaurants a figure .div-overflow-img {
   overflow: hidden;
