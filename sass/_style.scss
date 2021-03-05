@@ -62,7 +62,7 @@ body {
 
 header {
     height: 3.5em;
-
+    
     a {
         text-decoration: none;
         &:any-link{color: #333;}
@@ -79,6 +79,10 @@ header {
 /* ---------------- */
 /* Fin Logo du site */
 /* ---------------- */
+
+/* ------------------ */
+/* --- FIN HEADER --- */
+/* ------------------ */
 
 /* -------------------------------- */
 /* ---Formulaire de localisation--- */
@@ -119,7 +123,7 @@ header {
     background-color: #f6f6f6;
 }
 
-.decouverte > h1 {
+.decouverte > h2 {
     margin: 0;
     font-size: 1.6rem;
     text-align: center;
@@ -151,37 +155,41 @@ header {
     }
 }
 
-/* ------------------ */
-/* --- FIN HEADER --- */
-/* ------------------ */
 
 /* -------------------------------------- */
 /* --- SECTION FONCTIONNEMENT DU SITE --- */
 /* -------------------------------------- */
 
-.Fonctionnement > ol {
-    list-style-type: none;
-    counter-reset: compteur;
-    margin: 10% 0 20% 0;
-}
-
-.Fonctionnement > ol > li {
-    display: grid;
-    grid-template-columns: 10px 60px 200px;
-    margin: 20px;
-    margin-left: 0;
-    margin-right: 0;
-    width: 90%;
-    counter-increment: compteur;
-    background-color: #f6f6f6;
-    border-radius: 20px;
-    box-shadow: 0 5px 20px -15px #444;
-    vertical-align: middle;
-    font-weight: 500;
+.Fonctionnement {
     
-    i {
-        margin: auto;
-        color: #777;
+    h2 {
+        padding: 10% 0 0 4%
+    }
+    
+    ol {
+        list-style-type: none;
+        counter-reset: compteur;
+        margin: 10% 0 20% 0;
+        
+        li {
+            display: grid;
+            grid-template-columns: 10px 60px 200px;
+            margin: 20px;
+            margin-left: 0;
+            margin-right: 0;
+            width: 90%;
+            counter-increment: compteur;
+            background-color: #f6f6f6;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px -15px #444;
+            vertical-align: middle;
+            font-weight: 500;
+            
+            i {
+                margin: auto;
+                color: #777;
+            }
+        }
     }
 }
 

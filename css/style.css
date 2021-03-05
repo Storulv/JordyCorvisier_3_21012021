@@ -74,6 +74,9 @@ header a h1 {
 /* ---------------- */
 /* Fin Logo du site */
 /* ---------------- */
+/* ------------------ */
+/* --- FIN HEADER --- */
+/* ------------------ */
 /* -------------------------------- */
 /* ---Formulaire de localisation--- */
 /* -------------------------------- */
@@ -108,7 +111,7 @@ header a h1 {
   background-color: #f6f6f6;
 }
 
-.decouverte > h1 {
+.decouverte > h2 {
   margin: 0;
   font-size: 1.6rem;
   text-align: center;
@@ -139,19 +142,18 @@ header a h1 {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* ------------------ */
-/* --- FIN HEADER --- */
-/* ------------------ */
 /* -------------------------------------- */
 /* --- SECTION FONCTIONNEMENT DU SITE --- */
 /* -------------------------------------- */
-.Fonctionnement > ol {
+.Fonctionnement h2 {
+  padding: 10% 0 0 4%;
+}
+.Fonctionnement ol {
   list-style-type: none;
   counter-reset: compteur;
   margin: 10% 0 20% 0;
 }
-
-.Fonctionnement > ol > li {
+.Fonctionnement ol li {
   display: grid;
   grid-template-columns: 10px 60px 200px;
   margin: 20px;
@@ -165,7 +167,7 @@ header a h1 {
   vertical-align: middle;
   font-weight: 500;
 }
-.Fonctionnement > ol > li i {
+.Fonctionnement ol li i {
   margin: auto;
   color: #777;
 }
