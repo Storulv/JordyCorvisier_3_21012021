@@ -38,13 +38,13 @@ body {
 .fa-spinner {
   visibility: hidden;
   font-size: 300%;
-  animation: "spinner-loading" 1.5s 2;
+  animation: spinner-loading 1.5s 2;
   color: #9356DC;
 }
 
 .page-content {
   visibility: visible;
-  animation: "page-content-appear" 3s;
+  animation: page-content-appear 3s;
 }
 
 /* ---------------------------*/
@@ -59,10 +59,16 @@ body {
 header {
   height: 3.5em;
 }
-
-.logo-header {
-  width: 100%;
-  transform: scale(55%);
+header a {
+  text-decoration: none;
+}
+header a:any-link {
+  color: #333;
+}
+header a h1 {
+  font-family: "Shrikhand";
+  text-align: center;
+  color: black;
 }
 
 /* ---------------- */
@@ -109,7 +115,7 @@ header {
 }
 
 .decouverte > p {
-  font-style: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   text-align: center;
   color: #777;
@@ -244,7 +250,7 @@ header {
   position: absolute;
   bottom: 35px;
   right: 15px;
-  transform: scale(150%);
+  transform: scale(1.5);
 }
 .restaurants a figure figcaption i.solid {
   opacity: 0;
@@ -254,7 +260,7 @@ header {
   opacity: 1;
   color: transparent;
   background: linear-gradient(204deg, #9356dc 0%, #ff79da 100%);
-  background-clip: text;
+  -webkit-background-clip: text;
 }
 .restaurants a figure figcaption i.solid {
   /* visibility: hidden; */
@@ -315,21 +321,10 @@ footer ul li, footer a li {
 /* ------ */
 /* HEADER */
 /* ------ */
-.flex-header {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-.flex-header a {
-  text-decoration: none;
-}
-.flex-header a:any-link {
-  color: #333;
-}
-.flex-header .fa-arrow-left {
-  position: relative;
+header .back-home-arrow {
+  position: absolute;
   top: 1.2em;
-  left: 1.1em;
+  left: 1em;
   font-size: 1.4em;
 }
 

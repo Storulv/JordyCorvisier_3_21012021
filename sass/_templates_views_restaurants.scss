@@ -3,20 +3,12 @@
     /* HEADER */
     /* ------ */
     
-    .flex-header {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
+    header {
         
-        a {
-            text-decoration: none;
-            &:any-link{color: #333;}
-        }
-        
-        .fa-arrow-left {
-            position: relative;
+        .back-home-arrow {
+            position: absolute;
             top: 1.2em;
-            left: 1.1em;
+            left: 1em;
             font-size: 1.4em;
         }
         
