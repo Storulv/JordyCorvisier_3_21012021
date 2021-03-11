@@ -66,7 +66,7 @@ header a:any-link {
   color: #333;
 }
 header a h1 {
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", sans-serif;
   text-align: center;
   color: black;
 }
@@ -320,7 +320,6 @@ footer ul li, footer a li {
 }
 
 /* ------ */
-/* ------ */
 /* HEADER */
 /* ------ */
 header .back-home-arrow {
@@ -330,7 +329,9 @@ header .back-home-arrow {
   font-size: 1.4em;
 }
 
+/* ------------------- */
 /* IMAGE DU RESTAURANT */
+/* ------------------- */
 .restaurant-img {
   position: relative;
   z-index: -1;
@@ -341,11 +342,107 @@ header .back-home-arrow {
   width: 100%;
 }
 
+/* ------- */
+/* LE MENU */
+/* ------- */
 .template-main-restaurant {
   margin-top: -65px;
   padding: 1em;
   border-radius: 30px 30px 0 0;
+  background-color: #f6f6f6;
+}
+
+article header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2em;
+}
+article header h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 500;
+  font-size: 1.7em;
+}
+article header .fa-heart {
+  transform: scale(1.5);
+}
+article section h3 {
+  position: relative;
+  color: #333;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+article section h3::after {
+  position: absolute;
+  content: "";
+  bottom: -8px;
+  left: 0;
+  width: 2.6em;
+  height: 3px;
+  background-color: #99E2D0;
+}
+article section ul {
+  margin: 0;
+  padding: 0;
+}
+article section ul li {
+  position: relative;
+  margin-top: 1em;
+  padding: 1em 1em;
+  overflow: hidden;
+  list-style: none;
   background-color: white;
+  border-radius: 20px;
+}
+article section ul li h4 {
+  margin-top: 0;
+}
+article section ul li div {
+  display: flex;
+  justify-content: space-between;
+}
+article section ul li div p, article section ul li div b {
+  margin: 0;
+}
+article section ul li div p {
+  width: 80%;
+  text-overflow: "...";
+  white-space: nowrap;
+  overflow: hidden;
+}
+article section ul li b {
+  transform: translateX(0%);
+  transition: transform 0.3s;
+}
+article section ul li .validate-selector {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  background-color: #99E2D0;
+  color: white;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+}
+article section ul li .validate-selector i {
+  font-size: 2em;
+  transform: rotate(0deg);
+  transition: transform 0.25s;
+}
+article section ul li:hover p {
+  width: 70%;
+}
+article section ul li:hover .validate-selector {
+  transform: translateX(0%);
+}
+article section ul li:hover .validate-selector i {
+  transform: rotate(360deg);
+}
+article section ul li:hover b {
+  transform: translateX(-200%);
 }
 
 /*# sourceMappingURL=style.css.map */
