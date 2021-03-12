@@ -1,0 +1,154 @@
+/* ------ */
+/* HEADER */
+/* ------ */
+
+header {
+    
+    .back-home-arrow {
+        position: absolute;
+        top: 1.2em;
+        left: 1em;
+        font-size: 1.4em;
+    }
+    
+}
+
+/* ------------------- */
+/* IMAGE DU RESTAURANT */
+/* ------------------- */
+
+.restaurant-img {
+    position: relative;
+    z-index: -1;
+    margin: 0;
+    margin-top: .5em;
+    
+    img {
+        width: 100%;
+    }
+}
+
+/* ------- */
+/* LE MENU */
+/* ------- */
+
+.template-main-restaurant{
+    margin-top: -65px;
+    padding: 1em;
+    border-radius: 30px 30px 0 0;
+    background-color: #f6f6f6;
+}
+
+article {
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 2em;
+        
+        h2 {
+            font-family: 'Shrikhand', sans-serif;
+            font-weight: 500;
+            font-size: 1.7em;
+        }
+        
+        .fa-heart {
+            transform: scale(1.5);
+        }
+    }
+    section {
+        h3 {
+            position: relative;
+            color: #333;
+            font-weight: 300;
+            text-transform: uppercase;
+            
+            &::after {
+                position: absolute;
+                content: "";
+                bottom: -8px;
+                left: 0;
+                width: 2.6em;
+                height: 3px;
+                background-color: $tertiaire;
+            }
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                position: relative;
+                margin-top: 1em;
+                padding: 1em 1em;
+                overflow: hidden;
+                list-style: none;
+                background-color: white;
+                border-radius: 20px;
+                
+                h4 {
+                    margin-top: 0;
+                }
+                
+                div {
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    p, b {
+                        margin: 0;
+                    }
+                    
+                    p {
+                        width: 80%;
+                        text-overflow: "...";
+                        white-space: nowrap;
+                        overflow: hidden;
+                    }
+                }
+                
+                b {
+                    transform: translateX(0%);
+                    transition: transform .3s;
+                }
+                
+                .validate-selector {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    display: flex;
+                    align-items: center;
+                    padding: 1em;
+                    background-color: $tertiaire;
+                    color: white;
+                    transform: translateX(100%);
+                    transition: transform .3s;
+                    i {
+                        font-size: 2em;
+                        transform: rotate(0deg);
+                        transition: transform .25s;
+                    }
+                }
+                
+                &:hover {
+                    p {
+                        width: 70%;
+                    }
+
+                    .validate-selector {
+                        transform: translateX(0%);
+
+                        i {
+                            transform: rotate(360deg);
+                        }
+                    }
+                    
+                    b {
+                        transform: translateX(-200%);
+                    }
+                }
+            }
+        }
+    }
+}

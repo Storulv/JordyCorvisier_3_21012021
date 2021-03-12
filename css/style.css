@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+/* FICHIERS CSS & SCSS */
+@import url("/JordyCorvisier_3_21012021/css/normalize.css");
+body {
+  font-family: "roboto", sans-serif;
+}
+
+/* -----------------------*/
+/* ---loading Animation---*/
+/* -----------------------*/
+@keyframes spinner-loading {
+  0% {
+    visibility: visible;
+    z-index: 1;
+    transform: rotate(0deg);
+  }
+  100% {
+    visibility: visible;
+    transform: rotate(360deg);
+  }
+}
+@keyframes page-content-appear {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+.spinner-div {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: calc( 50% - 24px);
+}
+
+.fa-spinner {
+  visibility: hidden;
+  font-size: 300%;
+  animation: spinner-loading 1.5s 2;
+  color: #9356DC;
+}
+
+.page-content {
+  visibility: visible;
+  animation: page-content-appear 3s;
+}
+
+/* ---------------------------*/
+/* ---END loading Animation---*/
+/* ---------------------------*/
+/* -------------- */
+/* --- HEADER --- */
+/* -------------- */
+/* ------------ */
+/* Logo du site */
+/* ------------ */
+header {
+  height: 3.5em;
+}
+header a {
+  text-decoration: none;
+}
+header a:any-link {
+  color: #333;
+}
+header a h1 {
+  font-family: "Shrikhand", sans-serif;
+  text-align: center;
+  color: black;
+}
+
+/* ---------------- */
+/* Fin Logo du site */
+/* ---------------- */
+/* ------------------ */
+/* --- FIN HEADER --- */
+/* ------------------ */
+/* -------------------------------- */
+/* ---Formulaire de localisation--- */
+/* -------------------------------- */
+.form-location {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  background-color: #eaeaea;
+  box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+.form-location .location-input {
+  border: none;
+  width: 33%;
+  background-color: #eaeaea;
+}
+.form-location i {
+  margin-right: 2%;
+  color: #353535;
+}
+
+/* ------------------------------------- */
+/* --- FIN Formulaire de localisation--- */
+/* ------------------------------------- */
+/* ------------------ */
+/* SECTION DECOUVERTE */
+/* ------------------ */
+.decouverte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10%;
+  background-color: #f6f6f6;
+}
+
+.decouverte > h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.decouverte > p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #777;
+}
+
+.decouverte > a {
+  margin: auto;
+  border: none;
+  border-radius: 40px;
+  padding: 5%;
+  background: #9356dc;
+  background: linear-gradient(345deg, #9356dc 0%, #ff79da 100%);
+  color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  transition: all ease 0.2s;
+}
+.decouverte > a:hover {
+  transform: scale(1.02);
+  opacity: 95%;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* -------------------------------------- */
+/* --- SECTION FONCTIONNEMENT DU SITE --- */
+/* -------------------------------------- */
+.Fonctionnement h2 {
+  padding: 10% 0 0 4%;
+}
+.Fonctionnement ol {
+  list-style-type: none;
+  counter-reset: compteur;
+  margin: 10% 0 20% 0;
+}
+.Fonctionnement ol li {
+  display: grid;
+  grid-template-columns: 10px 60px 200px;
+  margin: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 90%;
+  counter-increment: compteur;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px -15px #444;
+  vertical-align: middle;
+  font-weight: 500;
+}
+.Fonctionnement ol li i {
+  margin: auto;
+  color: #777;
+}
+
+.Fonctionnement > ol > li::before {
+  content: counter(compteur);
+  position: relative;
+  top: 15px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #9356DC;
+  color: white;
+}
+
+.Fonctionnement > ol > li:hover {
+  background-color: #f5edff;
+}
+
+/* ------------------------------------------ */
+/* --- FIN SECTION FONCTIONNEMENT DU SITE --- */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* --- SECTION DES DIFFERENTS RESTAURANTS --- */
+/* ------------------------------------------ */
+.restaurants {
+  background-color: #f6f6f6;
+  width: 100%;
+}
+.restaurants > h2 {
+  padding: 10% 0 0 4%;
+}
+.restaurants a {
+  text-decoration: none;
+}
+.restaurants a:any-link {
+  color: #333;
+}
+.restaurants a figure {
+  position: relative;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 91%;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 5px 20px -15px #444;
+  transition: all ease 0.2s;
+}
+.restaurants a figure:hover {
+  transform: scale(1.02);
+  opacity: 95%;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+.restaurants a figure .div-overflow-img {
+  overflow: hidden;
+  height: 20vh;
+}
+.restaurants a figure img {
+  width: 100%;
+  height: auto;
+}
+.restaurants a figure figcaption {
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  padding: 0;
+  margin: 0;
+}
+.restaurants a figure figcaption h3 {
+  margin-left: 12px;
+  padding: 0;
+}
+.restaurants a figure figcaption p {
+  margin-top: -15px;
+  margin-left: 12px;
+}
+.restaurants a figure figcaption i {
+  position: absolute;
+  bottom: 35px;
+  right: 15px;
+  transform: scale(1.5);
+}
+.restaurants a figure figcaption i.solid {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.restaurants a figure figcaption i.solid:hover {
+  opacity: 1;
+  color: transparent;
+  background: linear-gradient(204deg, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+}
+.restaurants a figure figcaption i.solid {
+  /* visibility: hidden; */
+}
+.restaurants a figure figcaption .news-on-it {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  margin: 0;
+  padding: 5px;
+  background-color: #99E2D0;
+  color: #028867;
+}
+.restaurants a:nth-of-type(1) img {
+  transform: translateY(-58px);
+}
+.restaurants a:nth-of-type(2) img {
+  transform: translateY(-160px);
+}
+.restaurants a:nth-of-type(3) img {
+  transform: translateY(-65px);
+}
+.restaurants a:nth-of-type(4) img {
+  transform: translateY(-70px);
+}
+
+/* ---------------------------------------------- */
+/* --- FIN SECTION DES DIFFERENTS RESTAURANTS --- */
+/* ---------------------------------------------- */
+/* -------------- */
+/* --- FOOTER --- */
+/* -------------- */
+footer {
+  padding: 1% 7%;
+  background-color: #444;
+}
+footer h3 {
+  font-family: "Shrikhand";
+  color: white;
+}
+footer ul, footer a {
+  list-style-type: none;
+  padding: 0;
+  text-decoration: none;
+}
+footer ul:any-link, footer a:any-link {
+  color: white;
+}
+footer ul i, footer a i {
+  display: inline-block;
+  width: 25px;
+}
+footer ul li, footer a li {
+  line-height: 1.8em;
+}
+
+/* ------ */
+/* HEADER */
+/* ------ */
+header .back-home-arrow {
+  position: absolute;
+  top: 1.2em;
+  left: 1em;
+  font-size: 1.4em;
+}
+
+/* ------------------- */
+/* IMAGE DU RESTAURANT */
+/* ------------------- */
+.restaurant-img {
+  position: relative;
+  z-index: -1;
+  margin: 0;
+  margin-top: 0.5em;
+}
+.restaurant-img img {
+  width: 100%;
+}
+
+/* ------- */
+/* LE MENU */
+/* ------- */
+.template-main-restaurant {
+  margin-top: -65px;
+  padding: 1em;
+  border-radius: 30px 30px 0 0;
+  background-color: #f6f6f6;
+}
+
+article header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2em;
+}
+article header h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 500;
+  font-size: 1.7em;
+}
+article header .fa-heart {
+  transform: scale(1.5);
+}
+article section h3 {
+  position: relative;
+  color: #333;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+article section h3::after {
+  position: absolute;
+  content: "";
+  bottom: -8px;
+  left: 0;
+  width: 2.6em;
+  height: 3px;
+  background-color: #99E2D0;
+}
+article section ul {
+  margin: 0;
+  padding: 0;
+}
+article section ul li {
+  position: relative;
+  margin-top: 1em;
+  padding: 1em 1em;
+  overflow: hidden;
+  list-style: none;
+  background-color: white;
+  border-radius: 20px;
+}
+article section ul li h4 {
+  margin-top: 0;
+}
+article section ul li div {
+  display: flex;
+  justify-content: space-between;
+}
+article section ul li div p, article section ul li div b {
+  margin: 0;
+}
+article section ul li div p {
+  width: 80%;
+  text-overflow: "...";
+  white-space: nowrap;
+  overflow: hidden;
+}
+article section ul li b {
+  transform: translateX(0%);
+  transition: transform 0.3s;
+}
+article section ul li .validate-selector {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  background-color: #99E2D0;
+  color: white;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+}
+article section ul li .validate-selector i {
+  font-size: 2em;
+  transform: rotate(0deg);
+  transition: transform 0.25s;
+}
+article section ul li:hover p {
+  width: 70%;
+}
+article section ul li:hover .validate-selector {
+  transform: translateX(0%);
+}
+article section ul li:hover .validate-selector i {
+  transform: rotate(360deg);
+}
+article section ul li:hover b {
+  transform: translateX(-200%);
+}
+
+/*# sourceMappingURL=style.css.map */
