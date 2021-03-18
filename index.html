@@ -12,10 +12,10 @@
     <div class="spinner-div">
         <i class="fas fa-spinner"></i>
     </div>
-
+    
     <header class="page-content">
         <!-- Logo du site -->
-        <a href="../index.html">
+        <a href="./index.html">
             <h1>ohmyfood</h1>
         </a>
     </header>
@@ -26,90 +26,94 @@
             <input class="location-input" type="search" placeholder="Paris, Belleville">
         </form>
         <!-- Section découverte -->
-        <section class="decouverte">
-            <h2>Réservez le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d'exception sélectionnés pas nos soins.</p>
-            <a href="#restaurants">Explorer nos restaurants</a>
-        </section>
-        <!-- SECTION FONCTIONNEMENT DU SITE -->
-        <section class="Fonctionnement">
-            <h2>Fonctionnement</h2>
-            <ol>
-                <li>
-                    <i class="fas fa-mobile-alt"></i>
-                    <p>Choisissez un restaurant</p>
-                </li>
-                <li>
-                    <i class="fas fa-list-ul"></i>
-                    <p>Composez votre menu</p>
-                </li>
-                <li>
-                    <i class="fas fa-store"></i>
-                    <p>Dégustez au restaurant</p>
-                </li>
-            </ol>
-        </section>
+        <div class="decouverte-and-fonctionnement-on-media">
+            <section class="decouverte">
+                <h2>Réservez le menu qui vous convient</h2>
+                <p>Découvrez des restaurants d'exception sélectionnés pas nos soins.</p>
+                <a href="#restaurants">Explorer nos restaurants</a>
+            </section>
+            <!-- SECTION FONCTIONNEMENT DU SITE -->
+            <section class="Fonctionnement">
+                <h2>Fonctionnement</h2>
+                <ol>
+                    <li>
+                        <i class="fas fa-mobile-alt"></i>
+                        <p>Choisissez un restaurant</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-list-ul"></i>
+                        <p>Composez votre menu</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-store"></i>
+                        <p>Dégustez au restaurant</p>
+                    </li>
+                </ol>
+            </section>
+        </div>
         <!-- SECTION DES DIFFERENTS RESTAURANTS -->
         <section class="restaurants" id="restaurants">
             <h2>Restaurants</h2>
             <!-- CARD D'UN RESTAURANT -->
-            <a href="restaurant/La_palette_du_gout.html">
-                <figure>
-                    <div class="div-overflow-img">
-                        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Assiette composée de saumon et de salade">
-                    </div>
-                    <figcaption>
-                        <p class="news-on-it">Nouveau</p>
-                        <h3>La palette du goùt</h3>
-                        <p>Ménilmontant</p>
-                        <i class="far fa-heart"></i>
-                        <i class="fas fa-heart solid"></i>
-                    </figcaption>
-                </figure>
-            </a>
-            <!-- CARD D'UN RESTAURANT -->
-            <a href="#">
-                <figure>
-                    <div class="div-overflow-img">
-                        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Assiette de poisson en sauce accompagnée de pomme dauphine">
-                    </div>
-                    <figcaption>
-                        <p class="news-on-it">Nouveau</p>
-                        <h3>La note enchantée</h3>
-                        <p>Charonne</p>
-                        <i class="far fa-heart"></i>
-                        <i class="fas fa-heart solid"></i>
-                    </figcaption>
-                </figure>
-            </a>
-            <!-- CARD D'UN RESTAURANT -->
-            <a href="#">
-                <figure>
-                    <div class="div-overflow-img">
-                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Oeufs mollets sur pain toasté">
-                    </div>
-                    <figcaption>
-                        <h3>À la française</h3>
-                        <p>Cité Rouge</p>
-                        <i class="far fa-heart"></i>
-                        <i class="fas fa-heart solid"></i>
-                    </figcaption>
-                </figure>
-            </a>
-            <!-- CARD D'UN RESTAURANT -->
-            <a href="#">
-                <figure>
-                    <div class="div-overflow-img">
-                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Une grande assiette de poisson mariné aux légumes">
-                    </div>
-                    <figcaption>
-                        <h3>Le délice des sens</h3>
-                        <p>Folie-Méricourt</p>
-                        <i class="far fa-heart"></i>
-                        <i class="fas fa-heart solid"></i>
-                    </figcaption>
-                </figure>
-            </a>
+            <div class="restaurants-cards">
+                <a href="restaurant/La_palette_du_gout.html">
+                    <figure>
+                        <div class="div-overflow-img">
+                            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Assiette composée de saumon et de salade">
+                        </div>
+                        <figcaption>
+                            <p class="news-on-it">Nouveau</p>
+                            <h3>La palette du goùt</h3>
+                            <p>Ménilmontant</p>
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-heart solid"></i>
+                        </figcaption>
+                    </figure>
+                </a>
+                <!-- CARD D'UN RESTAURANT -->
+                <a href="restaurant/la_note_enchantee.html">
+                    <figure>
+                        <div class="div-overflow-img">
+                            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Assiette de poisson en sauce accompagnée de pomme dauphine">
+                        </div>
+                        <figcaption>
+                            <p class="news-on-it">Nouveau</p>
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-heart solid"></i>
+                        </figcaption>
+                    </figure>
+                </a>
+                <!-- CARD D'UN RESTAURANT -->
+                <a href="restaurant/a_la_francaise.html">
+                    <figure>
+                        <div class="div-overflow-img">
+                            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Oeufs mollets sur pain toasté">
+                        </div>
+                        <figcaption>
+                            <h3>À la française</h3>
+                            <p>Cité Rouge</p>
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-heart solid"></i>
+                        </figcaption>
+                    </figure>
+                </a>
+                <!-- CARD D'UN RESTAURANT -->
+                <a href="restaurant/le_delice_des_sens.html">
+                    <figure>
+                        <div class="div-overflow-img">
+                            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Une grande assiette de poisson mariné aux légumes">
+                        </div>
+                        <figcaption>
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-heart solid"></i>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
         </section>
     </main>
     

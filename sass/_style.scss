@@ -97,12 +97,12 @@ header {
     
     .location-input {
         border: none;
-        width: 33%;
+        width: 113px;
         background-color: #eaeaea;
     }
     
     i {
-        margin-right: 2%;
+        margin-right: 5px;
         color: #353535;
     }
 }
@@ -115,11 +115,33 @@ header {
 /* SECTION DECOUVERTE */
 /* ------------------ */
 
+@media screen and ( min-width : 1920px) {
+
+    .decouverte-and-fonctionnement-on-media {
+
+        .decouverte {
+        }
+
+        .Fonctionnement {
+
+            ol {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            li {
+                width: 20%;
+            }
+        }
+    }
+
+}
+
 .decouverte {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10%;
+    padding: 2.7em;
     background-color: #f6f6f6;
 }
 
@@ -140,7 +162,7 @@ header {
     margin: auto;
     border: none;
     border-radius: 40px;
-    padding: 5%;
+    padding: 15px;
     background: rgb(147,86,220);
     background: linear-gradient(345deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
     color: white;
@@ -163,32 +185,33 @@ header {
 .Fonctionnement {
     
     h2 {
-        padding: 10% 0 0 4%
+        padding: 1em 0 0 .5em;
     }
     
     ol {
         list-style-type: none;
         counter-reset: compteur;
-        margin: 10% 0 20% 0;
+        margin: 1em 0 2em 0;
         
-        li {
-            display: grid;
-            grid-template-columns: 10px 60px 200px;
-            margin: 20px;
-            margin-left: 0;
-            margin-right: 0;
-            width: 90%;
-            counter-increment: compteur;
-            background-color: #f6f6f6;
-            border-radius: 20px;
-            box-shadow: 0 5px 20px -15px #444;
-            vertical-align: middle;
-            font-weight: 500;
-            
-            i {
-                margin: auto;
-                color: #777;
-            }
+    }
+    
+    li {
+        display: grid;
+        grid-template-columns: 10px 60px 200px;
+        margin: 20px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 90%;
+        counter-increment: compteur;
+        background-color: #f6f6f6;
+        border-radius: 20px;
+        box-shadow: 0 5px 20px -15px #444;
+        vertical-align: middle;
+        font-weight: 500;
+        
+        i {
+            margin: auto;
+            color: #777;
         }
     }
 }
@@ -224,8 +247,14 @@ header {
     background-color: #f6f6f6;
     width: 100%;
     
+    .restaurants-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
     > h2 {
-        padding: 10% 0 0 4%
+        padding: 1em 0 0 4%
     }
     
     a {
@@ -236,7 +265,7 @@ header {
             position: relative;
             margin: auto;
             margin-bottom: 20px;
-            width: 91%;
+            width: 350px;
             overflow: hidden;
             border-radius: 10px;
             background-color: white;
@@ -341,7 +370,6 @@ header {
 /* -------------- */
 
 footer {
-    
     padding: 1% 7%;
     background-color: #444;
     

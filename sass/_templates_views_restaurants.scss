@@ -152,3 +152,30 @@ article {
         }
     }
 }
+
+.container-order-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    padding: 0;
+}
+
+.order-input {
+    width: 200px;
+    padding: 5%;
+    border: none;
+    border-radius: 40px;
+    background: rgb(147,86,220);
+    background: linear-gradient(345deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+    color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    transition: all ease .2s;
+    
+    &:hover {
+        transform: scale(1.02);
+        opacity: 95%;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    }
+}

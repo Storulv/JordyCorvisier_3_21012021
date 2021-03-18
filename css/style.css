@@ -89,11 +89,11 @@ header a h1 {
 }
 .form-location .location-input {
   border: none;
-  width: 33%;
+  width: 113px;
   background-color: #eaeaea;
 }
 .form-location i {
-  margin-right: 2%;
+  margin-right: 5px;
   color: #353535;
 }
 
@@ -103,11 +103,20 @@ header a h1 {
 /* ------------------ */
 /* SECTION DECOUVERTE */
 /* ------------------ */
+@media screen and (min-width: 1920px) {
+  .decouverte-and-fonctionnement-on-media .Fonctionnement ol {
+    display: flex;
+    justify-content: space-around;
+  }
+  .decouverte-and-fonctionnement-on-media .Fonctionnement li {
+    width: 20%;
+  }
+}
 .decouverte {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10%;
+  padding: 2.7em;
   background-color: #f6f6f6;
 }
 
@@ -128,7 +137,7 @@ header a h1 {
   margin: auto;
   border: none;
   border-radius: 40px;
-  padding: 5%;
+  padding: 15px;
   background: #9356dc;
   background: linear-gradient(345deg, #9356dc 0%, #ff79da 100%);
   color: white;
@@ -146,14 +155,14 @@ header a h1 {
 /* --- SECTION FONCTIONNEMENT DU SITE --- */
 /* -------------------------------------- */
 .Fonctionnement h2 {
-  padding: 10% 0 0 4%;
+  padding: 1em 0 0 0.5em;
 }
 .Fonctionnement ol {
   list-style-type: none;
   counter-reset: compteur;
-  margin: 10% 0 20% 0;
+  margin: 1em 0 2em 0;
 }
-.Fonctionnement ol li {
+.Fonctionnement li {
   display: grid;
   grid-template-columns: 10px 60px 200px;
   margin: 20px;
@@ -167,7 +176,7 @@ header a h1 {
   vertical-align: middle;
   font-weight: 500;
 }
-.Fonctionnement ol li i {
+.Fonctionnement li i {
   margin: auto;
   color: #777;
 }
@@ -200,8 +209,13 @@ header a h1 {
   background-color: #f6f6f6;
   width: 100%;
 }
+.restaurants .restaurants-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 .restaurants > h2 {
-  padding: 10% 0 0 4%;
+  padding: 1em 0 0 4%;
 }
 .restaurants a {
   text-decoration: none;
@@ -213,7 +227,7 @@ header a h1 {
   position: relative;
   margin: auto;
   margin-bottom: 20px;
-  width: 91%;
+  width: 350px;
   overflow: hidden;
   border-radius: 10px;
   background-color: white;
@@ -443,6 +457,32 @@ article section ul li:hover .validate-selector i {
 }
 article section ul li:hover b {
   transform: translateX(-200%);
+}
+
+.container-order-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+  padding: 0;
+}
+
+.order-input {
+  width: 200px;
+  padding: 5%;
+  border: none;
+  border-radius: 40px;
+  background: #9356dc;
+  background: linear-gradient(345deg, #9356dc 0%, #ff79da 100%);
+  color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  transition: all ease 0.2s;
+}
+.order-input:hover {
+  transform: scale(1.02);
+  opacity: 95%;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */
