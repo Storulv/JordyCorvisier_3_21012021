@@ -22,7 +22,7 @@ header {
     .restaurant-fig {
         overflow: hidden;
         max-height: 750px;
-
+        
         .restaurant-img-delice  {
             transform: translateY(-700px);
         }
@@ -62,6 +62,16 @@ header {
 
 article {
     
+    @media (min-width: 1920px) {
+        header {
+            width: 95%;
+            
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+    
     header {
         display: flex;
         justify-content: space-between;
@@ -77,15 +87,15 @@ article {
         .fa-heart {
             transform: scale(1.5);
         }
-
+        
         i {
             position: absolute;
-            bottom: 520px;
-            right: 25px;
+            right: 30px;
             transform: scale(1.5);
         }
         
         i.solid {
+            position: absolute;
             opacity: 0;
             transition: opacity 0.5s;
             
@@ -93,24 +103,24 @@ article {
                 opacity: 1;
                 color: transparent;
                 background: linear-gradient(204deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
-                -webkit-background-clip: text;
+                background-clip: text;
                 
             }
         }
     }
-
+    
     @media (min-width: 1920px) {
-    .menu-div-wrap {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-
-        ul {
-            width: 400px;
+        .menu-div-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+            ul {
+                width: 400px;
+            }
         }
     }
-}
-
+    
     section {
         h3 {
             position: relative;
@@ -189,10 +199,10 @@ article {
                     p {
                         width: 70%;
                     }
-
+                    
                     .validate-selector {
                         transform: translateX(0%);
-
+                        
                         i {
                             transform: rotate(360deg);
                         }

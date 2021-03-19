@@ -387,6 +387,14 @@ header .back-home-arrow {
   background-color: #f6f6f6;
 }
 
+@media (min-width: 1920px) {
+  article header {
+    width: 95%;
+  }
+  article header h2 {
+    text-align: center;
+  }
+}
 article header {
   display: flex;
   justify-content: space-between;
@@ -403,11 +411,11 @@ article header .fa-heart {
 }
 article header i {
   position: absolute;
-  bottom: 520px;
-  right: 25px;
+  right: 30px;
   transform: scale(1.5);
 }
 article header i.solid {
+  position: absolute;
   opacity: 0;
   transition: opacity 0.5s;
 }
@@ -415,7 +423,7 @@ article header i.solid:hover {
   opacity: 1;
   color: transparent;
   background: linear-gradient(204deg, #9356dc 0%, #ff79da 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
 }
 @media (min-width: 1920px) {
   article .menu-div-wrap {
