@@ -57,6 +57,14 @@ article {
             transform: scale(1.5);
         }
     }
+
+    @media screen, (min-width: 1920px) {
+    .menu-div-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
     section {
         h3 {
             position: relative;
@@ -163,7 +171,7 @@ article {
 
 .order-input {
     width: 200px;
-    padding: 5%;
+    padding: 14px;
     border: none;
     border-radius: 40px;
     background: rgb(147,86,220);

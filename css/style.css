@@ -225,9 +225,9 @@ header a h1 {
 }
 .restaurants a figure {
   position: relative;
+  width: 350px;
   margin: auto;
   margin-bottom: 20px;
-  width: 350px;
   overflow: hidden;
   border-radius: 10px;
   background-color: white;
@@ -380,6 +380,12 @@ article header h2 {
 article header .fa-heart {
   transform: scale(1.5);
 }
+@media screen, (min-width: 1920px) {
+  article .menu-div-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 article section h3 {
   position: relative;
   color: #333;
@@ -469,7 +475,7 @@ article section ul li:hover b {
 
 .order-input {
   width: 200px;
-  padding: 5%;
+  padding: 14px;
   border: none;
   border-radius: 40px;
   background: #9356dc;
