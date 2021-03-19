@@ -58,10 +58,15 @@ article {
         }
     }
 
-    @media screen, (min-width: 1920px) {
+    @media (min-width: 1920px) {
     .menu-div-wrap {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
+
+        ul {
+            width: 400px;
+        }
     }
 }
 

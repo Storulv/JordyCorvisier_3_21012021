@@ -115,7 +115,7 @@ header {
 /* SECTION DECOUVERTE */
 /* ------------------ */
 
-@media screen and ( min-width : 1920px) {
+@media ( min-width : 1920px) {
 
     .decouverte-and-fonctionnement-on-media {
 
@@ -280,7 +280,7 @@ header {
             
             .div-overflow-img {
                 overflow: hidden;
-                height: 20vh;
+                height: 147px;
             }
             
             img {
@@ -292,7 +292,7 @@ header {
                 
                 display: flex;
                 flex-direction: column;
-                height: 10vh;
+                height: 5rem;
                 padding: 0;
                 margin: 0;
                 

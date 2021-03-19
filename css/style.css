@@ -103,7 +103,7 @@ header a h1 {
 /* ------------------ */
 /* SECTION DECOUVERTE */
 /* ------------------ */
-@media screen and (min-width: 1920px) {
+@media (min-width: 1920px) {
   .decouverte-and-fonctionnement-on-media .Fonctionnement ol {
     display: flex;
     justify-content: space-around;
@@ -241,7 +241,7 @@ header a h1 {
 }
 .restaurants a figure .div-overflow-img {
   overflow: hidden;
-  height: 20vh;
+  height: 147px;
 }
 .restaurants a figure img {
   width: 100%;
@@ -250,7 +250,7 @@ header a h1 {
 .restaurants a figure figcaption {
   display: flex;
   flex-direction: column;
-  height: 10vh;
+  height: 5rem;
   padding: 0;
   margin: 0;
 }
@@ -380,10 +380,14 @@ article header h2 {
 article header .fa-heart {
   transform: scale(1.5);
 }
-@media screen, (min-width: 1920px) {
+@media (min-width: 1920px) {
   article .menu-div-wrap {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  article .menu-div-wrap ul {
+    width: 400px;
   }
 }
 article section h3 {
