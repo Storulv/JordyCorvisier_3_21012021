@@ -336,6 +336,9 @@ footer ul li, footer a li {
 /* ------ */
 /* HEADER */
 /* ------ */
+header {
+  z-index: 3;
+}
 header .back-home-arrow {
   position: absolute;
   top: 1.2em;
@@ -346,13 +349,31 @@ header .back-home-arrow {
 /* ------------------- */
 /* IMAGE DU RESTAURANT */
 /* ------------------- */
-.restaurant-img {
+@media (min-width: 1920px) {
+  .restaurant-fig {
+    overflow: hidden;
+    max-height: 750px;
+  }
+  .restaurant-fig .restaurant-img-delice {
+    transform: translateY(-700px);
+  }
+  .restaurant-fig .restaurant-img-francaise {
+    transform: translateY(-685px);
+  }
+  .restaurant-fig .restaurant-img-note {
+    transform: translateY(-1400px);
+  }
+  .restaurant-fig .restaurant-img-palette {
+    transform: translateY(-600px);
+  }
+}
+.restaurant-fig {
   position: relative;
   z-index: -1;
   margin: 0;
   margin-top: 0.5em;
 }
-.restaurant-img img {
+.restaurant-fig img {
   width: 100%;
 }
 
@@ -379,6 +400,22 @@ article header h2 {
 }
 article header .fa-heart {
   transform: scale(1.5);
+}
+article header i {
+  position: absolute;
+  bottom: 520px;
+  right: 25px;
+  transform: scale(1.5);
+}
+article header i.solid {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+article header i.solid:hover {
+  opacity: 1;
+  color: transparent;
+  background: linear-gradient(204deg, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
 }
 @media (min-width: 1920px) {
   article .menu-div-wrap {

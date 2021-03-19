@@ -3,7 +3,7 @@
 /* ------ */
 
 header {
-    
+    z-index: 3;
     .back-home-arrow {
         position: absolute;
         top: 1.2em;
@@ -17,7 +17,28 @@ header {
 /* IMAGE DU RESTAURANT */
 /* ------------------- */
 
-.restaurant-img {
+@media (min-width: 1920px) {
+    
+    .restaurant-fig {
+        overflow: hidden;
+        max-height: 750px;
+
+        .restaurant-img-delice  {
+            transform: translateY(-700px);
+        }
+        .restaurant-img-francaise  {
+            transform: translateY(-685px);
+        }
+        .restaurant-img-note  {
+            transform: translateY(-1400px);
+        }
+        .restaurant-img-palette  {
+            transform: translateY(-600px);
+        }
+    }
+}
+
+.restaurant-fig {
     position: relative;
     z-index: -1;
     margin: 0;
@@ -55,6 +76,26 @@ article {
         
         .fa-heart {
             transform: scale(1.5);
+        }
+
+        i {
+            position: absolute;
+            bottom: 520px;
+            right: 25px;
+            transform: scale(1.5);
+        }
+        
+        i.solid {
+            opacity: 0;
+            transition: opacity 0.5s;
+            
+            &:hover{
+                opacity: 1;
+                color: transparent;
+                background: linear-gradient(204deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+                -webkit-background-clip: text;
+                
+            }
         }
     }
 
