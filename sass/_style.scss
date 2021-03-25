@@ -115,28 +115,6 @@ header {
 /* SECTION DECOUVERTE */
 /* ------------------ */
 
-@media ( min-width : 1920px) {
-
-    .decouverte-and-fonctionnement-on-media {
-
-        .decouverte {
-        }
-
-        .Fonctionnement {
-
-            ol {
-                display: flex;
-                justify-content: space-around;
-            }
-
-            li {
-                width: 20%;
-            }
-        }
-    }
-
-}
-
 .decouverte {
     display: flex;
     flex-direction: column;
@@ -177,6 +155,32 @@ header {
     }
 }
 
+@media ( min-width : 1920px) {
+    
+    .decouverte-and-fonctionnement-on-media {
+        
+        .Fonctionnement {
+            
+            ol {
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            li {
+                width: 20%;
+            }
+        }
+    }
+    
+}
+
+@media ( min-width : 2560px) {
+    
+    .decouverte {
+        padding: 4em;
+    }
+}
+
 
 /* -------------------------------------- */
 /* --- SECTION FONCTIONNEMENT DU SITE --- */
@@ -185,7 +189,7 @@ header {
 .Fonctionnement {
     
     h2 {
-        padding: 1em 0 0 .5em;
+        padding: 1em 0 0 4%;
     }
     
     ol {
@@ -235,6 +239,13 @@ header {
     background-color: #f5edff;
 }
 
+@media ( min-width : 2560px) {
+    
+    .Fonctionnement {
+        padding: 1.6em 0;
+    }
+}
+
 /* ------------------------------------------ */
 /* --- FIN SECTION FONCTIONNEMENT DU SITE --- */
 /* ------------------------------------------ */
@@ -252,9 +263,9 @@ header {
         flex-wrap: wrap;
         justify-content: space-around;
     }
-
-    > h2 {
-        padding: 1em 0 0 4%
+    
+    h2 {
+        padding: 1em 0 0 4%;
     }
     
     a {
@@ -361,6 +372,19 @@ header {
     }
 }
 
+@media ( min-width : 2560px) {
+    
+    .restaurants {
+        padding: 3em 0;
+
+        h2 {
+            padding-bottom: 1em;
+        }
+    }
+}
+
+
+
 /* ---------------------------------------------- */
 /* --- FIN SECTION DES DIFFERENTS RESTAURANTS --- */
 /* ---------------------------------------------- */
@@ -394,6 +418,25 @@ footer {
         
         li {
             line-height: 1.8em;
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    
+    footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        div {
+            margin: 1em 5em;
+        }
+        
+        ul {
+            display: flex;
+            justify-content: center;
+            margin-top: 0;
         }
     }
 }
