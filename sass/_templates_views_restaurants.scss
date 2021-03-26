@@ -53,6 +53,13 @@ header {
     }
 }
 
+@media (min-width: 600px) {
+
+    .restaurant-fig-note {
+        max-height: 612px;
+    }
+}
+
 @media (min-width: 992px) {
 
     .restaurant-fig-note {

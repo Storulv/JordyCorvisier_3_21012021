@@ -415,6 +415,11 @@ header .back-home-arrow {
   transform: translateY(-170px);
 }
 
+@media (min-width: 600px) {
+  .restaurant-fig-note {
+    max-height: 612px;
+  }
+}
 @media (min-width: 992px) {
   .restaurant-fig-note {
     max-height: 375px;
