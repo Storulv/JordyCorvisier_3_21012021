@@ -49,6 +49,27 @@ header {
     }
 }
 
+@media (min-width: 992px) {
+    
+    .restaurant-fig {
+        overflow: hidden;
+        max-height: 375px;
+        
+        .restaurant-img-delice  {
+            transform: translateY(-300px);
+        }
+        .restaurant-img-francaise  {
+            transform: translateY(-285px);
+        }
+        .restaurant-img-note  {
+            transform: translateY(-900px);
+        }
+        .restaurant-img-palette  {
+            transform: translateY(-200px);
+        }
+    }
+}
+
 .restaurant-fig {
     position: relative;
     z-index: -1;

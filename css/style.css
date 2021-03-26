@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&family=Roboto:wght@100;300;400;500;700&display=swap");
 /* FICHIERS CSS & SCSS */
 @import url("/JordyCorvisier_3_21012021/css/normalize.css");
 body {
@@ -408,6 +407,24 @@ header .back-home-arrow {
   }
   .restaurant-fig .restaurant-img-palette {
     transform: translateY(-600px);
+  }
+}
+@media (min-width: 992px) {
+  .restaurant-fig {
+    overflow: hidden;
+    max-height: 375px;
+  }
+  .restaurant-fig .restaurant-img-delice {
+    transform: translateY(-300px);
+  }
+  .restaurant-fig .restaurant-img-francaise {
+    transform: translateY(-285px);
+  }
+  .restaurant-fig .restaurant-img-note {
+    transform: translateY(-900px);
+  }
+  .restaurant-fig .restaurant-img-palette {
+    transform: translateY(-200px);
   }
 }
 .restaurant-fig {
