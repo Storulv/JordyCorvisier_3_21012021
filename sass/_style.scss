@@ -97,12 +97,12 @@ header {
     
     .location-input {
         border: none;
-        width: 33%;
+        width: 113px;
         background-color: #eaeaea;
     }
     
     i {
-        margin-right: 2%;
+        margin-right: 5px;
         color: #353535;
     }
 }
@@ -119,7 +119,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10%;
+    padding: 2.7em;
     background-color: #f6f6f6;
 }
 
@@ -140,7 +140,7 @@ header {
     margin: auto;
     border: none;
     border-radius: 40px;
-    padding: 5%;
+    padding: 15px;
     background: rgb(147,86,220);
     background: linear-gradient(345deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
     color: white;
@@ -155,6 +155,32 @@ header {
     }
 }
 
+@media ( min-width : 1920px) {
+    
+    .decouverte-and-fonctionnement-on-media {
+        
+        .Fonctionnement {
+            
+            ol {
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            li {
+                width: 20%;
+            }
+        }
+    }
+    
+}
+
+@media ( min-width : 2560px) {
+    
+    .decouverte {
+        padding: 4em;
+    }
+}
+
 
 /* -------------------------------------- */
 /* --- SECTION FONCTIONNEMENT DU SITE --- */
@@ -163,32 +189,33 @@ header {
 .Fonctionnement {
     
     h2 {
-        padding: 10% 0 0 4%
+        padding: 1em 0 0 4%;
     }
     
     ol {
         list-style-type: none;
         counter-reset: compteur;
-        margin: 10% 0 20% 0;
+        margin: 1em 0 2em 0;
         
-        li {
-            display: grid;
-            grid-template-columns: 10px 60px 200px;
-            margin: 20px;
-            margin-left: 0;
-            margin-right: 0;
-            width: 90%;
-            counter-increment: compteur;
-            background-color: #f6f6f6;
-            border-radius: 20px;
-            box-shadow: 0 5px 20px -15px #444;
-            vertical-align: middle;
-            font-weight: 500;
-            
-            i {
-                margin: auto;
-                color: #777;
-            }
+    }
+    
+    li {
+        display: grid;
+        grid-template-columns: 10px 60px 200px;
+        margin: 20px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 90%;
+        counter-increment: compteur;
+        background-color: #f6f6f6;
+        border-radius: 20px;
+        box-shadow: 0 5px 20px -15px #444;
+        vertical-align: middle;
+        font-weight: 500;
+        
+        i {
+            margin: auto;
+            color: #777;
         }
     }
 }
@@ -212,6 +239,13 @@ header {
     background-color: #f5edff;
 }
 
+@media ( min-width : 2560px) {
+    
+    .Fonctionnement {
+        padding: 1.6em 0;
+    }
+}
+
 /* ------------------------------------------ */
 /* --- FIN SECTION FONCTIONNEMENT DU SITE --- */
 /* ------------------------------------------ */
@@ -224,8 +258,14 @@ header {
     background-color: #f6f6f6;
     width: 100%;
     
-    > h2 {
-        padding: 10% 0 0 4%
+    .restaurants-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    h2 {
+        padding: 1em 0 0 4%;
     }
     
     a {
@@ -234,9 +274,9 @@ header {
         
         figure {
             position: relative;
+            width: 350px;
             margin: auto;
             margin-bottom: 20px;
-            width: 91%;
             overflow: hidden;
             border-radius: 10px;
             background-color: white;
@@ -251,7 +291,7 @@ header {
             
             .div-overflow-img {
                 overflow: hidden;
-                height: 20vh;
+                height: 147px;
             }
             
             img {
@@ -263,7 +303,7 @@ header {
                 
                 display: flex;
                 flex-direction: column;
-                height: 10vh;
+                height: 5rem;
                 padding: 0;
                 margin: 0;
                 
@@ -332,6 +372,19 @@ header {
     }
 }
 
+@media ( min-width : 2560px) {
+    
+    .restaurants {
+        padding: 3em 0;
+
+        h2 {
+            padding-bottom: 1em;
+        }
+    }
+}
+
+
+
 /* ---------------------------------------------- */
 /* --- FIN SECTION DES DIFFERENTS RESTAURANTS --- */
 /* ---------------------------------------------- */
@@ -341,7 +394,6 @@ header {
 /* -------------- */
 
 footer {
-    
     padding: 1% 7%;
     background-color: #444;
     
@@ -366,6 +418,25 @@ footer {
         
         li {
             line-height: 1.8em;
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    
+    footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        div {
+            margin: 1em 5em;
+        }
+        
+        ul {
+            display: flex;
+            justify-content: center;
+            margin-top: 0;
         }
     }
 }
