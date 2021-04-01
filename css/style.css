@@ -357,13 +357,13 @@ footer ul li, footer a li {
     align-items: center;
     flex-direction: column;
   }
-  footer section {
-    margin: 1em 5em;
-  }
-  footer ul {
+  footer .ul-footer-main {
     display: flex;
     justify-content: center;
     margin-top: 0;
+  }
+  footer .half-ul {
+    margin: 1em 5em;
   }
 }
 @keyframes list-animation-menu {
