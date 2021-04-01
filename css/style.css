@@ -507,7 +507,7 @@ article header i.solid:hover {
   opacity: 1;
   color: transparent;
   background: linear-gradient(204deg, #9356dc 0%, #ff79da 100%);
-  background-clip: text;
+  -webkit-background-clip: text;
 }
 @media (min-width: 1920px) {
   article .menu-div-wrap {
@@ -637,7 +637,7 @@ article section ul li:hover b {
 }
 .order-input:hover {
   transform: scale(1.02);
-  opacity: 95%;
+  opacity: 85%;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 

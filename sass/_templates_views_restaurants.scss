@@ -162,7 +162,7 @@ article {
                 opacity: 1;
                 color: transparent;
                 background: linear-gradient(204deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
-                background-clip: text;
+                -webkit-background-clip: text;
                 
             }
         }
@@ -319,7 +319,7 @@ article {
     
     &:hover {
         transform: scale(1.02);
-        opacity: 95%;
+        opacity: 85%;
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
     }
 }
