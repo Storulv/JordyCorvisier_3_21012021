@@ -357,7 +357,7 @@ footer ul li, footer a li {
     align-items: center;
     flex-direction: column;
   }
-  footer div {
+  footer section {
     margin: 1em 5em;
   }
   footer ul {
