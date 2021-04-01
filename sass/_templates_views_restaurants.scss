@@ -28,28 +28,43 @@ header {
 /* IMAGE DU RESTAURANT */
 /* ------------------- */
 
-@media (min-width: 1920px) {
+.restaurant-fig {
+    position: relative;
+    z-index: -1;
+    margin: 0;
+    margin-top: .5em;
     
-    .restaurant-fig {
-        overflow: hidden;
-        max-height: 750px;
-        
-        .restaurant-img-delice  {
-            transform: translateY(-700px);
-        }
-        .restaurant-img-francaise  {
-            transform: translateY(-685px);
-        }
-        .restaurant-img-note  {
-            transform: translateY(-1400px);
-        }
-        .restaurant-img-palette  {
-            transform: translateY(-600px);
-        }
+    img {
+        width: 100%;
+    }
+}
+
+.restaurant-fig-note {
+    position: relative;
+    z-index: -1;
+    margin: 0;
+    margin-top: .5em;
+    overflow: hidden;
+    max-height: 253px;
+
+    img {
+        width: 100%;
+        transform: translateY(-170px);
+    }
+}
+
+@media (min-width: 600px) {
+
+    .restaurant-fig-note {
+        max-height: 612px;
     }
 }
 
 @media (min-width: 992px) {
+
+    .restaurant-fig-note {
+        max-height: 375px;
+    }
     
     .restaurant-fig {
         overflow: hidden;
@@ -61,23 +76,35 @@ header {
         .restaurant-img-francaise  {
             transform: translateY(-285px);
         }
-        .restaurant-img-note  {
-            transform: translateY(-900px);
-        }
         .restaurant-img-palette  {
             transform: translateY(-200px);
         }
     }
 }
 
-.restaurant-fig {
-    position: relative;
-    z-index: -1;
-    margin: 0;
-    margin-top: .5em;
+@media (min-width: 1920px) {
+
+    .restaurant-fig-note {
+        max-height: 750px;
+
+        .restaurant-img-note  {
+            transform: translateY(-350px);
+        }
+    }
     
-    img {
-        width: 100%;
+    .restaurant-fig {
+        overflow: hidden;
+        max-height: 750px;
+        
+        .restaurant-img-delice  {
+            transform: translateY(-700px);
+        }
+        .restaurant-img-francaise  {
+            transform: translateY(-685px);
+        }
+        .restaurant-img-palette  {
+            transform: translateY(-200px);
+        }
     }
 }
 
@@ -135,7 +162,7 @@ article {
                 opacity: 1;
                 color: transparent;
                 background: linear-gradient(204deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
-                background-clip: text;
+                -webkit-background-clip: text;
                 
             }
         }
@@ -292,7 +319,7 @@ article {
     
     &:hover {
         transform: scale(1.02);
-        opacity: 95%;
+        opacity: 85%;
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
     }
 }

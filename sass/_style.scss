@@ -429,14 +429,14 @@ footer {
         align-items: center;
         flex-direction: column;
         
-        div {
-            margin: 1em 5em;
-        }
-        
-        ul {
+        .ul-footer-main {
             display: flex;
             justify-content: center;
             margin-top: 0;
+        }
+
+        .half-ul {
+            margin: 1em 5em;
         }
     }
 }
